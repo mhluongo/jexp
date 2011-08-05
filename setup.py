@@ -5,7 +5,7 @@ def read(*rnames):
         return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 setup(
-    name='peeper',
+    name='jexp',
     version='0.1.0',
     author='Matt Luongo',
     author_email='mhluongo@gmail.com',
@@ -16,8 +16,6 @@ setup(
     zip_safe=False,
     long_description=read('README.rst'),
     platforms=['posix'],
-    tests_require=read('test_requirements.txt').split('\n'),
-    install_requires=read('requirements.txt').split('\n'),
     classifiers=[
         'Development Status :: 1 - Planning',
         'Intended Audience :: Developers',
