@@ -99,3 +99,6 @@ class J(object):
 
     def __neg__(self):
         return self._prepend('-')
+
+    def __invert__(self):
+        return self._preprend('!')
