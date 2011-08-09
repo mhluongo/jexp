@@ -101,4 +101,4 @@ class J(object):
         return self._prepend('-')
 
     def __invert__(self):
-        return self._preprend('!')
+        return self._prepend('!')
