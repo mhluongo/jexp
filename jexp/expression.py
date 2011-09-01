@@ -35,7 +35,7 @@ class J(object):
 
     def __str__(self):
         #evaluates the tree and outputs it as javascript
-        if self._atom:
+        if self._atom is not None:
             return str(self._atom)
         elif self._connector is None:
             return '{0}({1})'.format(str(self._left),\
