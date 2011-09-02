@@ -6,7 +6,7 @@ def read(*rnames):
 
 setup(
     name='jexp',
-    version='0.1.1',
+    version='0.1.2',
     author='Matt Luongo',
     author_email='mhluongo@gmail.com',
     description='A simple Javascript expression builder written for Python.',
