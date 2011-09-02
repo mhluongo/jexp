@@ -15,8 +15,10 @@ class J(object):
         parent._connector = connector
         if isinstance(other, basestring):
             parent._right = '"{0}"'.format(other.replace('"',r'\"'))
-        else:
+        elif isinstance(other, J):
             parent._right = other
+        else:
+            parent._right = J(other)
         return parent
 
     def _prepend(self, prefix):
